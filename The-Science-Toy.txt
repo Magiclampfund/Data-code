@@ -1,0 +1,7 @@
+#include "simulation/Elements.h"
+//#TPT-Directive ElementClass Element_MPC PT_MPC 143
+Element_MPC::Element_MPC()
+{
+	Identifier = "DEFAULT_PT_MPC";
+	Name = "MPC";
+	Colour = PIXPACK(0xA9FF00);
