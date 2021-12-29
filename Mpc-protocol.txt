@@ -1,0 +1,11 @@
+defmodule Mpc.Return do
+  @moduledoc false
+  use Protobuf, syntax: :proto3
+
+  @type t :: %__MODULE__{
+          message: String.t()
+        }
+  defstruct [:result, :code, :message]
+
+  field :result, 1, type: :bool
+  field :code, 2, type: Mpc.Return.ResponseCode, enum: true
