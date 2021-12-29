@@ -1,0 +1,9 @@
+		return (Map<Long, NeudArbre>) PF.privateFonction(test, "getTableau");
+	}
+
+	@Test
+	default void testsetCalculer1() {
+		Arbre test = creatInstance();
+		long mpc = test.getTron();
+		test.setCalculer(mpc, Calculer.GAGNER);
+		assertTrue(getTableau(test).get(mpc).getCalculer() == Calculer.GAGNER
